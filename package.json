@@ -12,7 +12,7 @@
   "dependencies": {
     "framer-motion": "^13.4.0",
     "isotope-layout": "^3.0.6",
-    "jquery": "^3.7.1",
+    "jquery": "^4.0.0",
     "jquery-knob": "^1.2.11",
     "lightbox2": "^2.11.5",
     "rc-slider": "^11.1.7",
