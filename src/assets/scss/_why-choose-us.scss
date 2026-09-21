@@ -1,0 +1,541 @@
+/*** 
+
+====================================================================
+    Why Choose Us
+====================================================================
+
+***/
+
+.why-choose-us {
+  padding: 120px 0 70px;
+  position: relative;
+  .icon-lines-23 {
+    bottom: -810px;
+    pointer-events: none;
+    position: absolute;
+    right: 6px;
+    z-index: 1;
+  }
+  .outer-box{
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 140px;
+      width: auto;
+      height: auto;
+      background: var(--gradient-2);
+      content: '';
+      z-index: -1;
+      @include media-breakpoint-down(lg){
+        display: none;
+      }
+    }
+  }
+  .content-column {
+    margin-bottom: 50px;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 0;
+    }
+    .inner-column {
+      position: relative;
+      padding-left: 45px;
+      padding-right: 120px;
+      padding-top: 140px;
+      pointer-events: none;
+      @include media-breakpoint-down(xxl){
+        padding-right: 50px;
+      }
+      @include media-breakpoint-down(lg){
+        background-color: var(--theme-color1);
+        padding: 60px 30px;
+      }
+      @include media-breakpoint-down(sm){
+        padding: 30px 15px;
+      }
+      .icon-lines-13 {
+        position: absolute;
+        top: 140px;
+        right: 0;
+      }
+      .sec-title {
+        margin-bottom: 40px;
+        .sub-title{
+          color: var(--theme-color-light);
+        }
+        .text {
+          font-size: 18px;
+        }
+      }
+
+      .skills {
+        position: relative;
+        z-index: 2;
+        @include media-breakpoint-down(lg){
+          margin-bottom: 0;
+        }
+        .skill-item {
+          position: relative;
+          z-index: 3;
+          .skill-header {
+            .skill-title {
+              color: var(--theme-color-light);
+              font-size: 16px;
+              font-weight: 700;
+              letter-spacing: -.02em;
+              margin-bottom: 0;
+            }
+          }
+          .skill-bar {
+            height: 49px;
+            border-radius: 0;
+            .bar-inner {
+              height: 49px;
+              border-radius: 0;
+              background-color: var(--theme-color2);
+              .bar {
+                position: relative;
+                height: 49px;
+                border-radius: 0;
+                background-color: var(--theme-color2);
+                background-image: url(../images/icons/icon-lines-12.png);
+                background-color: rgba(255,255,255,.10);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .image-column{
+    .inner-column{
+      padding-right: 55px;
+      position: relative;
+      @include media-breakpoint-down(xxl){
+        padding-right: 0;
+      }
+      .image {
+        position: relative;
+        margin-bottom: 0;
+        margin-left: -375px;
+        @include media-breakpoint-down(lg){
+          margin-left: 0;
+        }
+        img {
+          border-top-right-radius: 100px;
+          height: 100%;
+          margin-top: 140px;
+          object-fit: cover;
+          width: 100%;
+          @include media-breakpoint-down(lg){
+            border-radius: 0;
+          }
+        }
+      }
+      .video-box {
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        left: 100%;
+        margin-left: -55px;
+        position: absolute;
+        z-index: 1;
+        @include media-breakpoint-down(xxl){
+          margin-left: 0;
+        }
+        @include media-breakpoint-down(lg){
+          left: 50%;
+          top: 60%;
+          transform: translate(-50%, -50%);
+          z-index: 3;
+        }
+        .play-btn {
+          margin-right: 35px;
+          @include media-breakpoint-down(lg){
+            margin-right: 0;
+          }
+          .icon {
+            font-size: 42px;
+            @include media-breakpoint-down(md){
+              height: 100px;
+              width: 100px;
+            }
+            @include media-breakpoint-down(sm){
+              font-size: 18px;
+              height: 70px;
+              width: 70px;
+            }
+          }
+        }
+        .icon-text {
+          pointer-events: none;
+          @include media-breakpoint-down(lg){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*** 
+
+====================================================================
+    Why Choose Us Two
+====================================================================
+
+***/
+
+.why-choose-us-two {
+  position: relative;
+  padding: 120px 0 70px;
+  .bg {
+    top: -110px;
+    bottom: 0;
+    height: auto;
+  }
+  .content-column {
+    margin-bottom: 50px;
+    .inner-column {
+      position: relative;
+      padding-right: 75px;
+      @include media-breakpoint-down(xl){
+        padding-right: 0;
+      }
+      .sec-title {
+        margin-bottom: 45px;
+      }
+      .image-box {
+        position: relative;
+        display: flex;
+        margin-bottom: 50px;
+        @include media-breakpoint-down(sm){
+          flex-direction: column;
+        }
+        .image {
+          flex-shrink: 0;
+          margin-right: 30px;
+          margin-bottom: 0;
+          @include media-breakpoint-down(sm){
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+          img {
+            border-radius: 10px;
+            @include media-breakpoint-down(sm){
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      .skills {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .faq-column {
+    margin-bottom: 50px;
+    .inner-column {
+      padding-top: 45px;
+    }
+  }
+}
+.accordion-box {
+  position: relative;
+  .block {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    padding: 23px 40px;
+    box-shadow: 0 0 70px 0 rgba(0,0,0,.1);
+    background-color: var(--theme-color-white);
+    &:last-child {margin-bottom: 0;}
+    @include media-breakpoint-down(md){
+      padding: 20px 20px;
+    }
+    .acc-btn {
+      position: relative;
+      color: var(--theme-color2);
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 29px;
+      padding-left: 15px;
+      @include title-font;
+      cursor: pointer;
+      box-shadow: 0 0 43px rgba(0, 0, 0, 0.006);
+      letter-spacing: -.04em;
+      transition: all 500ms ease;
+      @include media-breakpoint-down(sm){
+        padding-right: 10px;
+      }
+      .count {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 18px;
+        font-weight: 800;
+      }
+      .icon{
+        position: absolute;
+        top: 9px;
+        right: 0;
+        line-height: 1em;
+        font-size: 16px;
+        font-weight: 800;
+        color: var(--theme-color-dark);
+        text-align: center;
+        @include transition(all 300ms ease);
+      }
+    }
+    .acc-btn.active {
+      .icon{
+        &:before {
+          content: "\f068";
+        }
+        transform: scale(-1) rotate(180deg);
+        color: var(--theme-color2);
+      }
+    }
+    .acc-content {
+      position: relative;
+      display: none;
+      .content {
+        position: relative;
+        padding: 13px 0 15px 0;
+        .text {
+          display: block;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .acc-content.current {
+      display: block;
+    }
+  }
+}
+
+/*** 
+====================================================================
+  Why Choose Us Three
+====================================================================
+***/
+.why-choose-us-three{
+  background-color: #222429;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 249px;
+  position: relative;
+  .bg {
+    &:before{
+      bottom: 0;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 0;
+    }
+  }
+  @media (max-width: 991.98px) {
+    padding: 120px 0;
+  }
+  .content-column {
+    .inner-column {
+      padding-right: 80px;
+      @include media-breakpoint-down(xl) {
+        padding-right: 0;
+      }
+    }
+  }
+  .form-column {
+    .inner-column {
+      padding-left: 63px;
+      @include media-breakpoint-down(lg) {
+        padding-left: 0;
+      }
+    }
+  }
+  .contact-form{
+    background-image: url(../images/icons/shape-2.png);
+    background-color: var(--theme-color-white);
+    border-radius: 10px;
+    box-shadow: 0px 0px 37px 0px rgba(55, 55, 55, 0.18);
+    margin-bottom: -180px;
+    position: relative;
+    z-index: 1;
+    @include media-breakpoint-down(xl) {
+      padding: 48px 30px 60px;
+    }
+    @include media-breakpoint-down(lg) {
+     margin-bottom: 0;
+   }
+    @include media-breakpoint-down(sm) {
+      padding: 48px 15px 60px;
+    }
+   .theme-btn {
+    border-radius: 3px;
+    &:before {
+      border-radius: 3px;
+    }
+  }
+  .select2-container--default .select2-selection--single,
+  input:not([type="submit"]),
+  textarea,
+  select {
+    background-color: rgba(241,238,246,.5);
+  }
+}
+}
+
+.feature-block-five{
+  position: relative;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.31);
+  .inner-box{
+    padding-left: 100px;
+    position: relative;
+    @include for-xxs{
+      padding-left: 0;
+    }
+  }
+  .inner-box{
+    &:hover{
+      .icon{
+        background-color: var(--theme-color-light);
+        color: var(--theme-color1);
+      }
+    }
+  }
+  .icon{
+    background-color: var(--theme-color1);
+    border-radius: 50%;
+    color: var(--text-color-bg-theme-color1);
+    font-family: flaticon;
+    font-size: 41.6px;
+    height: 75px;
+    left: 0;
+    line-height: 75px;
+    @include flex-center;
+    position: absolute;
+    top: 0;
+    width: 75px;
+    transition: all 300ms ease;
+    @include for-xxs{
+      position: relative;
+      margin-bottom: 20px;
+    }
+  }
+  .title {
+    position: relative;
+    top: -3px;
+    color: var(--theme-color-white);
+    margin-bottom: 15px;
+    a {
+      color: var(--theme-color-white);
+    }
+  }
+  .text{
+    color: #ccc;
+  }
+}
+
+/*** 
+====================================================================
+  Why Choose Us Four
+====================================================================
+***/
+
+.why-choose-us-four{
+  padding: 120px 0 70px;
+  position: relative;
+  .content-column{
+    .icon-box{
+      margin-bottom: 35px;
+      position: relative;
+      .icon-style{
+        margin-bottom: 10px;
+      }
+      .icon{
+        background-color: var(--theme-color1);
+        border-radius: 50%;
+        color: var(--text-color-bg-theme-color1);
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        transition: all .3s ease 0s;
+        width: 50px;
+      }
+      &:hover{
+        .icon{
+          transform: rotateY(180deg);
+        }
+      }
+      .title{
+        color: var(--headings-color);
+        font-size: 19px;
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+    }
+    .image-box{
+      position: relative;
+      .image {
+        text-align: center;
+        img {
+          max-width: 203.6px;
+        }
+      }
+      .text{
+        color: var(--theme-color-white);
+        display: inline-block;
+        font-family: var(--headings-font);
+        font-size: 150px;
+        font-weight: 700;
+        margin: -105px auto 0;
+        line-height: 1;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: var(--theme-color1);
+      }
+      .title{
+        margin-top: 0;
+        padding: 0 20px;
+      }
+    }
+  }
+  .faq-column{
+    .accordion-box{
+      .block{
+        box-shadow: 0 0 70px 0 rgba(0,0,0,.1);
+        padding: 0;
+        .acc-btn {
+          border-radius: 10px 10px 0 0;
+          padding: 1rem 1.5rem;
+          &.active {
+            background-color: #fafafc;
+          }
+          .icon {
+            top: 21px;
+            right: 20px;
+          }
+        }
+        .acc-content {
+          padding: 1rem 1.5rem;
+          .content {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pie-chart-section{
+  background-color: var(--theme-color-white);
+}

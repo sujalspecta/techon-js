@@ -1,0 +1,477 @@
+/*** 
+====================================================================
+  Contact Section
+====================================================================
+***/
+
+.contact-section {
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding-bottom: 500px;
+  }
+  .map {
+    bottom: 0;
+    display: block;
+    filter: grayscale(100%);
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 55%;
+    @include media-breakpoint-down(xl){
+      width: 50%;
+    }
+    @include media-breakpoint-down(lg){
+      height: 500px;
+      width: 100%;
+      z-index: 3;
+    }
+  }
+  .bg {
+    width: 66%;
+    clip-path: polygon(0 0, 100% 0, 73% 100%, 0 100%);
+    @include media-breakpoint-down(xl){
+      clip-path: none;
+      width: 50%;
+    }
+    @include media-breakpoint-down(lg){
+      width: 100%;
+    }
+    &:before {
+      background-color: var(--theme-color-dark);
+      content: '';
+      @include overlay;
+      opacity: .5;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 81%;
+      height: 100%;
+      opacity: .8;
+      clip-path: polygon(0 0, 70% 0, 100% 60%, 87% 100%, 0 100%);
+      background: var(--gradient-2);
+      @include media-breakpoint-down(xl){
+        clip-path: none;
+        width: 100%;
+      }
+    }
+  }
+  .form-column {
+    position: relative;
+    .inner-column {
+      max-width: 350px;
+      padding: 70px 0 90px;
+      @include media-breakpoint-down(xl){
+        max-width: 100%;
+      }
+      @include media-breakpoint-down(lg){
+        padding: 120px 0;
+      }
+    }
+  }
+}
+
+/*** 
+====================================================================
+  Contact Section Two
+====================================================================
+***/
+
+.contact-section-two {
+  background-color: #f6f5fb;
+  overflow: hidden;
+  padding: 120px 0;
+  position: relative;
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons/pattern-shape-4.png);
+    content: "";
+    opacity: 0.48;
+    background-position: top right;
+  }
+  .bg {
+    left: auto;
+    right: 0;
+    width: 630px;
+  }
+  .content-column {
+    .inner-column {
+      padding: 120px 0 90px 91px;
+      position: relative;
+      margin-right: -4px;
+      @include media-breakpoint-down(xxl){
+        padding-left: 40px;
+      }
+      @include media-breakpoint-down(xl){
+        padding-left: 20px;
+      }
+      @include media-breakpoint-down(lg){
+        padding-left: 0;
+      }
+      .sec-title {margin-bottom: 30px;}
+      .features-list {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 31px;
+        @include media-breakpoint-down(xl){
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        li {
+          color: var(--theme-color2);
+          letter-spacing: -.02em;
+          position: relative;
+          margin-bottom: 10px;
+          i {
+            color: var(--theme-color1);
+            margin-right: 5px;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+
+  .form-column {
+    position: relative;
+    .bg {
+      left: -375px;
+      right: 0;
+      width: auto;
+    }
+    .inner-column {
+      margin-right: 105px;
+      padding: 120px 0;
+      position: relative;
+      @include media-breakpoint-down(xxl){
+        margin-right: 50px;
+      }
+      @include media-breakpoint-down(xl){
+        margin-right: 20px;
+      }
+      @include media-breakpoint-down(lg){
+        margin-right: 0;
+      }
+    }
+    .overlay-1 {
+      bottom: -23px;
+      left: -375px;
+      position: absolute;
+      @include media-breakpoint-down(lg){
+        bottom: 0;
+      }
+    }
+  }
+}
+.contact-form {
+  background-color: var(--theme-color-white);
+  border-bottom-right-radius: 100px;
+  padding: 48px 60px 60px;
+  position: relative;
+  @include media-breakpoint-down(sm){
+    border-radius: 0;
+    padding: 40px;
+  }
+  .icon-lines-7 {
+    @include absolute-bottom-right;
+  }
+  .title {
+    margin-bottom: 35px;
+    position: relative;
+    @include media-breakpoint-down(sm){
+      font-size: 26px;
+    }
+  }
+  .form-group {
+    margin-bottom: 20px;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .select2-container--default .select2-selection--single,
+  input:not([type="submit"]),
+  textarea,
+  select {
+    background-color: #f6f6f6;
+    border: 1px solid transparent;
+    color: var(--text-color);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 50px;
+    line-height: 32px;
+    margin-bottom: 0;
+    padding: 18px 30px;
+    position: relative;
+    width: 100%;
+    @include transition(all 300ms ease);
+  }
+  ::-webkit-input-placeholder {color: var(--text-color);}
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: var(--theme-color2);
+  }
+  textarea {
+    height: auto;
+    resize: none;
+  }
+  input[type="submit"],
+  button {
+    padding: 20px 49px;
+  }
+  &.style-two {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    .title {
+      color: var(--theme-color-light);
+      font-size: 36px;
+    }
+  }
+}
+.feature-block-three{
+  margin-bottom: 16px;
+  position: relative;
+  .inner-box{
+    position: relative;
+    background-color: var(--theme-color-white);
+    text-align: center;
+    @include transition(all 300ms ease);
+    &:before {
+      background-color: var(--theme-color1);
+      bottom: 0;
+      content:'';
+      position:absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      width: 0%;
+      transition:all 300ms ease;
+    }
+    &:hover{
+      &:before {
+        width: 100%;
+      }
+      .icon{
+        color: var(--text-color-bg-theme-color1);
+        transform: scaleX(-1);
+      }
+      .title {
+        color: var(--text-color-bg-theme-color1);
+      }
+    }
+  }
+  .content {
+    align-items: center;
+    background-color: var(--theme-color-white);
+    display: flex;
+    padding: 18px 30px;
+    @include media-breakpoint-down(xl){
+      padding: 18px 20px;
+    }
+    &:before {
+      border-bottom: 23px solid rgba(255, 255, 255, .2);
+      border-right: 43px solid transparent;
+      bottom: 0;
+      content: '';
+      height: 0;
+      left: 0;
+      position: absolute;
+      width: 0;
+      z-index: 3;
+    }
+    &:after {
+      border-top: 23px solid rgba(255, 255, 255, .2);
+      border-left: 43px solid transparent;
+      content: '';
+      height: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      z-index: 3;
+    }
+  }
+  .icon{
+    color: var(--theme-color1);
+    display: inline-block;
+    font-size: 30px;
+    line-height: 1em;
+    margin-right: 15px;
+    @include transition(all 300ms ease);
+  }
+  .title{
+    color: var(--theme-color2);
+    display: block;
+    margin-bottom: 0;
+    @include transition(all 300ms ease);
+  }
+}
+
+/*** 
+====================================================================
+  Contact Section Three
+====================================================================
+***/
+
+.contact-section-three{
+  height: 585px;
+  position: relative;
+  .map{
+    bottom: 0;
+    display: block;
+    filter: grayscale(100%);
+    height: 585px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+  }
+  .contact-box{
+    background-color: var(--theme-color1);
+    border-radius: 15px;
+    color: var(--theme-color-light);
+    margin-top: 175px;
+    padding: 60px 55px;
+    position: relative;
+    .text{
+      color: var(--text-color-bg-theme-color1);
+      font-weight: 500;
+      line-height: 30px;
+    }
+    a{
+      color: var(--text-color-bg-theme-color1);
+      display: inline-block;
+    }
+  }
+}
+
+
+/*** 
+====================================================================
+  Contact Section Two
+====================================================================
+***/
+
+.contact-section-four{
+  overflow: hidden;
+  padding: 210px 0 70px;
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding: 120px 0 70px;
+  }
+  .bg-image{
+    bottom: 0;
+    max-width: 445px;
+    position: absolute;
+    right: 120px;
+    z-index: 1;
+    @media (max-width: 1600px){
+      right: 0;
+    }
+    @media (max-width: 1400px){
+      display: none;
+    }
+  }
+  .sec-title{
+    margin-bottom: 40px;
+  }
+  .title-column{
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .form-column{
+    margin-bottom: 50px;
+    .inner-column{
+      padding-right: 130px;
+      margin-left: -30px;
+      @media (max-width: 1400px){
+        margin-left: 0;
+        padding-right: 0;
+      }
+      @include for-lg{
+        margin-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+  .contact-form{
+    border-radius: 0;
+    @include media-breakpoint-down(sm){
+      padding: 40px 20px;
+    }
+  }
+}
+// Contact Info Block
+.contact-info-block-four{
+  margin-bottom: 20px;
+  position: relative;
+  .inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80px;
+    overflow: hidden;
+    padding-left: 110px;
+    position: relative;
+    @include for-xs{
+      min-height: auto;
+      padding-left: 70px;
+    }
+    &:hover{
+     .icon{
+        background-color: var(--theme-color1);
+        transform: rotateY(180deg);
+      }
+    }
+  }
+  .icon{
+    background-color: var(--theme-color1);
+    color: var(--text-color-bg-theme-color1);
+    @include flex-center;
+    height: 80px;
+    font-size: 24px;
+    left: 0;
+    line-height: 1em;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: all 300ms ease;
+    width: 80px;
+    @include for-xs{
+      font-size: 20px;
+      height: 50px;
+      width: 50px;
+    }
+  }
+  .title{
+    color: #717070;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  .text{
+    color: #171717;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    a{
+      color: inherit;
+      font-weight: inherit;
+      &:hover{
+        color: var(--theme-color2);
+      }
+    }
+  }
+}

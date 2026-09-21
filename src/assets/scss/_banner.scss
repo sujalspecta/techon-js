@@ -1,0 +1,770 @@
+/* Animate 1 */
+.owl-carousel{
+  .animate-7,
+  .animate-6,
+  .animate-5,
+  .animate-4,
+  .animate-3,
+  .animate-2,
+  .animate-1{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 500ms ease;
+  }
+  .animate-x {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 500ms ease;
+  }    
+  .swiper-slide-active{
+    .animate-7,
+    .animate-6,
+    .animate-5,
+    .animate-4,
+    .animate-3,
+    .animate-2,
+    .animate-1 {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .animate-2 {
+      transition-delay: 300ms;
+    }
+    .animate-3 {
+      transition-delay: 600ms;
+    }
+    .animate-4 {
+      transition-delay: 900ms;
+    }
+    .animate-5 {
+      transition-delay: 1200ms;
+    }
+    .animate-6 {
+      transition-delay: 1500ms;
+    }
+    .animate-7 {
+      transition-delay: 1800ms;
+    }
+  }
+}
+
+/*** 
+====================================================================
+  Banner Section
+====================================================================
+***/
+
+.banner-section {
+  background-color: var(--theme-color2);
+  overflow: hidden;
+  position: relative;
+  .slide-item {
+    position: relative;
+    .bg-image {
+      @include overlay;
+      @include background;
+      &:before {
+        @include overlay;
+        @include background;
+        pointer-events: none;
+        background-color: #121f33;
+        opacity: .29;
+        content: "";
+      }
+    }
+    .shape-lines-1 {
+      @include absolute;
+      top: 35px;
+      z-index: 3;
+      width: 390px;
+      height: 540px;
+      background-image: url(../images/banner/shape-lines-1.png);
+      @include media-breakpoint-down(xl){
+        display: none;
+      }
+    }
+    .shape-lines-2 {
+      width: 389px;
+      height: 404px;
+      background-image: url(../images/banner/shape-lines-2.png);
+      position: absolute;
+      top: calc(50% - 54px);
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: flicker-animation 3s infinite;
+      @include media-breakpoint-down(md){
+        display: none;
+      }
+    }
+  }
+  .content-box {
+    position: relative;
+    padding: 252px 0 230px;
+    text-align: center;
+    @include media-breakpoint-down(sm){
+      padding: 160px 0;
+    }
+    .text-stroke {
+      font-size: 280px;
+      font-weight: 800;
+      text-transform: uppercase;
+      line-height: 100px;
+      letter-spacing: 20px;
+      color: rgba(255, 255, 255, 0.11);
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgba(0, 0, 0, 0.16);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 252px;
+      @include media-breakpoint-down(xl){
+        font-size: 200px;
+      }
+      @include media-breakpoint-down(lg){
+        font-size: 150px;
+      }
+      @include media-breakpoint-down(md){
+        letter-spacing: 10px;
+      }
+      @include media-breakpoint-down(sm){
+        display: none;
+      }
+    }
+    .sub-title {
+      color: var(--theme-color-light);
+      font-family: var(--title-font);
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: 1.5px;
+      margin: 0 0 19px;
+      text-transform: uppercase;
+    }
+    .title{
+      position: relative;
+      font-size: 100px;
+      line-height: 1;
+      color: var(--theme-color-light);
+      margin-bottom: 45px;
+      z-index: 1;
+      @include media-breakpoint-down(xxl){
+        font-size: 75px;
+      }
+      @include media-breakpoint-down(xl){
+        letter-spacing: .04em;
+        font-size: 68px;
+      }
+      @include media-breakpoint-down(lg){
+        font-size: 60px;
+        letter-spacing: .02em;
+        line-height: 1.2em;
+      }
+      @include media-breakpoint-down(sm){
+        font-size: 50px;
+      }
+    }
+    .theme-btn {
+      padding: 19.5px 51px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .7px;
+    }
+  }
+}
+.banner-carousel .owl-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -40px;
+  display: none;
+  @include media-breakpoint-down(lg){
+    display: none;
+  }
+  .owl-next,
+  .owl-prev {
+    display: block;
+    height: 53px;
+    width: 53px;
+    line-height: 53px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50%;
+    color: var(--theme-color1);
+    background-color: var(--theme-color-light);
+    text-align: center;
+    transition: all 500ms ease;
+    &:hover {
+      background-color: var(--theme-color1);
+      color: var(--theme-color-light);
+    }
+  }
+}
+
+/***
+====================================================================
+  Banner Section Two
+====================================================================
+***/
+
+.banner-section-two {
+  background-color: #222429;
+  overflow: hidden;
+  position: relative;
+  .slide-item {
+    position: relative;
+    .bg-image {
+      @include overlay;
+      @include background;
+      &:before {
+        @include overlay;
+        @include background;
+        pointer-events: none;
+        background: linear-gradient(221deg,#00000063 63%,#0d6efd 100%);
+        opacity: .97;
+        content: "";
+      }
+    }
+    .shape-lines-1 {
+      @include absolute;
+      top: auto;
+      bottom: -112px;
+      left: -35px;
+      z-index: 3;
+      width: 390px;
+      height: 540px;
+      background-image: url(../images/banner/shape-lines-1.png);
+      @include media-breakpoint-down(lg){
+        display: none;
+      }
+    }
+    .shape-lines-2 {
+      width: 389px;
+      height: 404px;
+      background-image: url(../images/banner/shape-lines-2.png);
+      position: absolute;
+      top: calc(50% + 54px);
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: flicker-animation 3s infinite;
+    }
+  }
+  .content-box {
+    position: relative;
+    padding: 355px 0 215px;
+    text-align: center;
+    @include media-breakpoint-down(sm){
+      padding: 260px 0 175px;
+    }
+    .title{
+      position: relative;
+      font-size: 84px;
+      font-weight: 800;
+      line-height: 100px;
+      color: var(--theme-color-light);
+      margin-bottom: 35px;
+      z-index: 1;
+      @include media-breakpoint-down(xxl){
+        font-size: 75px;
+      }
+      @include media-breakpoint-down(xl){
+        letter-spacing: .04em;
+        font-size: 68px;
+      }
+      @include media-breakpoint-down(lg){
+        font-size: 60px;
+        letter-spacing: .02em;
+        line-height: 1.2em;
+      }
+      @include media-breakpoint-down(md){
+        font-size: 50px;
+      }
+      @include media-breakpoint-down(sm){
+        font-size: 40px;
+      }
+    }
+    .theme-btn {
+      padding: 19.5px 51px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .7px;
+    }
+  }
+}
+
+/***
+====================================================================
+  Banner Section Three
+====================================================================
+***/
+
+.banner-section-three {
+  background-color: var(--bg-theme-color2);
+  padding: 199px 0 179px;
+  position: relative;
+  @include media-breakpoint-down(lg) {
+    padding: 199px 0 90px;
+  }
+  @include media-breakpoint-down(sm){
+    padding: 190px 0 70px;
+  }
+  .bg{
+    &:before {
+      @include overlay;
+      @include background;
+      pointer-events: none;
+      background: #000;
+      opacity: .6;
+      content: "";
+    }
+  }
+  .content-column{
+    margin-bottom: 50px;
+    .inner-column {
+      position: relative;
+      z-index: 99;
+      @include media-breakpoint-down(lg){
+        text-align: center;
+        max-width: 100%;
+      }
+      .half-circle{
+        background-size: 90px;
+        bottom: 235px;
+        height: 100px;
+        left: -70px;
+        position: absolute;
+        width: 90px;
+        animation: flicker-animation 3s infinite;
+      }
+      .sec-title {
+        margin-bottom: 32px;
+        .sub-title {
+          background: transparent;
+          color: var(--theme-color-white);
+          -webkit-text-fill-color: var(--theme-color-white);
+          &:before {
+            display: none;
+          }
+        }
+        .title {
+          display: inline;
+          font-weight: 700;
+          letter-spacing: -0.64px;
+          line-height: 73.2px;
+          margin-bottom: 27px;
+          position: relative;
+          font-size: 61px;
+          text-transform: uppercase;
+          @include media-breakpoint-down(md) {
+            font-size: 48px;
+            line-height: 1.2;
+          }
+          @include media-breakpoint-down(sm) {
+            font-size: 40px;
+          }
+        }
+        .text {
+          font-weight: 400;
+          margin: 30px 0 45px;
+        }
+      }
+      .btn-box {
+        display: flex;
+        margin-right: 23px;
+        @include media-breakpoint-down(lg){
+          justify-content: center;
+          margin-right: 0;
+        }
+        @include media-breakpoint-down(sm){
+          align-items: center;
+          flex-direction: column;
+        }
+        .theme-btn {
+          margin-right: 20px;
+          @include media-breakpoint-down(sm){
+            margin: 10px 0;
+          }
+          &:last-child {
+            padding: 18.2px 40.2px;
+          }
+        }
+      }
+    }
+  }
+  .image-column {
+    margin-bottom: 50px;
+    position: relative;
+    text-align: right;
+    @include media-breakpoint-down(lg){
+      display: none;
+    }
+    .wave1{
+      bottom: -59px;
+      left: 55px;
+      position: absolute;
+      z-index: 1;
+    }
+    .inner-column {
+      margin-right: -30px;
+      margin-top: -1px;
+      @include media-breakpoint-down(xl){
+        margin-right: 0;
+      }
+    }
+    .image{
+      display: inline-block;
+      position: relative;
+      img{
+        -webkit-mask-image: url(../images/banner/banner3-shape1.png);
+        -webkit-mask-position: center center;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+      }
+    }
+  }
+}
+
+/***
+====================================================================
+  Banner Section Four
+====================================================================
+***/
+
+.banner-section-four {
+  background-color: var(--bg-theme-color2);
+  padding: 250px 0 130px;
+  position: relative;
+  @include media-breakpoint-down(xxl){
+    padding: 250px 0 95px;
+  }
+  @include media-breakpoint-down(md){
+    padding: 120px 0 70px;
+  }
+  @include media-breakpoint-down(lg){
+    padding: 200px 0 60px;
+  }
+  .bg{
+    opacity: 1;
+    &.style2{
+      background-position: top center;
+      background-size: contain;
+      left: auto;
+      right: 0;
+      top: 0;
+      width: 45%;
+      @include media-breakpoint-down(xl){
+        width: 55%;
+      }
+      @include media-breakpoint-down(lg){
+        display: none;
+      }
+    }
+  }
+  .content-column{
+    margin-bottom: 50px;
+    .inner-column {
+      margin-right: -40px;
+      position: relative;
+      z-index: 99;
+      @include media-breakpoint-down(lg){
+        text-align: center;
+        max-width: 100%;
+      }
+      .half-circle{
+        background-size: 90px;
+        bottom: 235px;
+        height: 100px;
+        left: -70px;
+        position: absolute;
+        width: 90px;
+        animation: flicker-animation 3s infinite;
+      }
+      .sec-title {
+        margin-bottom: 40px;
+        .title {
+          color: var(--headings-color);
+          font-size: 89.6px;
+          line-height: 1.2em;
+          display: inline;
+          letter-spacing: -0.64px;
+          margin-bottom: 27px;
+          position: relative;
+          @include media-breakpoint-down(xxl) {
+            font-size: 60px;
+          }
+          @include media-breakpoint-down(lg) {
+            font-size: 48px;
+          }
+          span{
+            color: var(--theme-color1);
+          }
+        }
+        .text {
+          color: var(--text-color);
+          font-weight: 400;
+          margin: 30px 0 0;
+          letter-spacing: 0;
+        }
+      }
+      .btn-box {
+        display: flex;
+        margin-right: 23px;
+        @include media-breakpoint-down(lg){
+          justify-content: center;
+          margin-right: 0;
+        }
+        @include media-breakpoint-down(sm){
+          align-items: center;
+          flex-direction: column;
+        }
+        .theme-btn {
+          margin-right: 20px;
+          @include media-breakpoint-down(sm){
+            margin: 10px 0;
+          }
+          &:last-child {
+            padding: 18.2px 40.2px;
+          }
+        }
+      }
+    }
+  }
+  .image-column {
+    margin-bottom: 50px;
+    position: relative;
+    text-align: right;
+    @include media-breakpoint-down(lg){
+      text-align: center;
+    }
+    .wave1{
+      bottom: 100px;
+      left: 0px;
+      position: absolute;
+      z-index: 1;
+    }
+    .inner-column {
+      margin-right: -30px;
+      margin-top: -15px;
+      @include media-breakpoint-down(xl){
+        margin-right: 0;
+      }
+    }
+    .image{
+      display: inline-block;
+      position: relative;
+      img{
+        // -webkit-mask-image: url(../images/resource/home4-shape.png);
+        -webkit-mask-position: center center;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+      }
+    }
+  }
+}
+
+/***
+====================================================================
+  Banner Section Five
+====================================================================
+***/
+
+.banner-section-five {
+  padding: 240px 0 255px;
+  min-height: 740px;
+  position: relative;
+  min-height: fit-content;
+  overflow: hidden;
+  background-color: #000;
+  @include media-breakpoint-down(xxl){
+    padding: 250px 0 250px;
+  }
+  @include media-breakpoint-down(md){
+    padding: 120px 0 120px;
+  }
+  @include media-breakpoint-down(lg){
+    padding: 200px 0 150px;
+  }
+  .bg{
+    opacity: .5;
+    &.style2{
+      background-position: top center;
+      background-size: contain;
+      left: auto;
+      right: 0;
+      top: 0;
+      width: 45%;
+      @include media-breakpoint-down(xl){
+        width: 55%;
+      }
+      @include media-breakpoint-down(lg){
+        display: none;
+      }
+    }
+  }
+  .tp-dottedoverlay {  
+    background-color: transparent;
+    background-image: linear-gradient(320deg, rgb(0 0 0 / 0%) 64%, #0e6ffd 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      top: 35px;
+      z-index: 3;
+      width: 390px;
+      height: 540px;
+      background-image: url(../images/banner/shape-lines-1.png);
+      opacity: 0.5;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 389px;
+      height: 404px;
+      background-image: url(../images/banner/shape-lines-2.png);
+      position: absolute;
+      top: calc(50% - 255px);
+      left: calc(50% - 735px);
+      opacity: 0.35;
+      animation: flicker-animation 3s infinite;
+    }
+  }
+  .content-column{
+    padding-left: 30px;
+    @include media-breakpoint-down(md){
+      padding-left: 0;
+    }
+    .icon-lines {
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+    h1{
+      position: relative;
+      display: block;
+      color: var(--theme-color-light);
+      font-size: 100px;
+      font-weight: 800;
+      line-height: 110px;
+      letter-spacing: -.64px;
+      z-index: 3;
+      @include media-breakpoint-down(xxl){
+        font-size: 80px;
+        line-height: 1.2;
+      }
+      @include for-md{
+        font-size: 64px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 50px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 40px;
+      }
+      @include for-xxs{
+        br {display: none;}
+      }
+    }
+    .theme-btn{
+      padding: 20px 49px;
+    }
+  }
+  .shape-curve {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+    svg {
+      width: calc(100% + 1.3px);
+      height: 120px;
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      .shape-fill {
+        fill: #fff;
+        transform-origin: center;
+        transform: rotateY(0deg);
+      }
+    }
+  }
+}
+
+
+
+/***
+====================================================================
+  Flicker Animation
+====================================================================
+***/
+
+.flicker-animation {
+  -webkit-animation: flicker-animation 3s infinite;
+  -moz-animation: flicker-animation 3s infinite;
+  -o-animation: flicker-animation 3s infinite;
+  animation: flicker-animation 3s infinite;
+}
+@keyframes flicker-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes flicker-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes flicker-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flicker-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,105 @@
+/*** 
+====================================================================
+  Main Slider
+====================================================================
+***/
+
+.main-slider {
+  min-height: 740px;
+  position: relative;
+  min-height: fit-content;
+  overflow: hidden;
+  .shape-curve {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+    svg {
+      width: calc(100% + 1.3px);
+      height: 120px;
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      .shape-fill {
+        fill: #fff;
+        transform-origin: center;
+        transform: rotateY(0deg);
+      }
+    }
+  }
+  .tp-dottedoverlay {
+    background-color: transparent;
+    background-image: linear-gradient(312deg, rgba(0, 0, 0, 0.58) 64%, #0e6ffd 100%);
+    opacity: 1;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      top: 35px;
+      z-index: 3;
+      width: 390px;
+      height: 540px;
+      background-image: url(../images/banner/shape-lines-1.png);
+      opacity: 0.5;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 389px;
+      height: 404px;
+      background-image: url(../images/banner/shape-lines-2.png);
+      position: absolute;
+      top: calc(50% - 255px);
+      left: calc(50% - 735px);
+      opacity: 0.35;
+      animation: flicker-animation 3s infinite;
+    }
+  }
+  .icon-lines {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  h1{
+    position: relative;
+    display: block;
+    color: var(--theme-color-light);
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 110px;
+    letter-spacing: -.64px;
+    z-index: 3;
+    @include media-breakpoint-down(xxl){
+      font-size: 80px;
+      line-height: 1.2;
+    }
+    @include for-md{
+      font-size: 64px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 50px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 40px;
+    }
+    @include for-xxs{
+      br {display: none;}
+    }
+  }
+  .theme-btn{
+    padding: 20px 49px;
+  }
+  .rev_slider_wrapper {
+    .tparrows {
+      display: none;
+    }
+  }
+}

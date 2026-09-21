@@ -1,0 +1,371 @@
+body.dark-mode {
+  --dark-color1: #111111;
+  --dark-color2: #232323;
+  --dark-color3: #343434;
+  --dark-color4: #212529;
+  /*	Border Color */
+}
+body.dark-mode .bg-dark-1,
+body.dark-mode body,
+body.dark-mode .sticky-header.fixed-header,
+body.dark-mode .page-wrapper,
+body.dark-mode .header-style-two .header-lower,
+body.dark-mode .skills .skill-item .skill-bar .bar-inner,
+body.dark-mode .feature-block-three .inner-box,
+body.dark-mode .feature-block-three .content,
+body.dark-mode .project-block-four .inner-box:before,
+body.dark-mode .service-block-three .inner-box,
+body.dark-mode .main-footer.home4-style .contact-list-two .icon,
+body.dark-mode .contact-section-four .contact-form,
+body.dark-mode .header-style-five .header-lower,
+body.dark-mode .feature-block .inner-box .icon,
+body.dark-mode .tm-pricing-smart-switcher-button .switch-buttons li a,
+body.dark-mode .testimonial-section,
+body.dark-mode .testimonial-block .inner-box,
+body.dark-mode .default-dots .swiper-pagination .swiper-pagination-bullet,
+body.dark-mode .why-choose-us-three .contact-form,
+body.dark-mode .feature-block-six .inner-box,
+body.dark-mode .pricing-block-three .inner-box,
+body.dark-mode .main-footer.home4-style .newsletter-form .form-group input[type=email],
+body.dark-mode .testimonial-section .owl-nav .owl-prev,
+body.dark-mode .testimonial-section .owl-nav .owl-next {
+  background-color: var(--dark-color1);
+}
+body.dark-mode .main-slider .shape-curve svg .shape-fill,
+body.dark-mode .banner-section-five .shape-curve svg .shape-fill {
+  fill: var(--dark-color1);
+}
+body.dark-mode .why-choose-us-four .content-column .image-box .text {
+  color: var(--dark-color1);
+}
+body.dark-mode .tm-pricing-smart-switcher-button .switch-buttons li a,
+body.dark-mode .default-dots .swiper-pagination .swiper-pagination-bullet,
+body.dark-mode .projects-section-two .outer-box,
+body.dark-mode .pricing-block-three .inner-box,
+body.dark-mode .pricing-block-three .inner-box .title,
+body.dark-mode .testimonial-section .owl-nav .owl-prev,
+body.dark-mode .testimonial-section .owl-nav .owl-next {
+  border-color: var(--dark-color1);
+}
+body.dark-mode .newsletter-form .form-group input[type=text],
+body.dark-mode .newsletter-form .form-group input[type=email] {
+  background: var(--dark-color1);
+}
+body.dark-mode .bg-dark-2,
+body.dark-mode .header-style-two .header-top,
+body.dark-mode .clients-section .outer-box:before,
+body.dark-mode .clients-section .clients-carousel .owl-nav,
+body.dark-mode .clients-section .clients-carousel .owl-nav .owl-prev,
+body.dark-mode .clients-section .clients-carousel .owl-nav .owl-next,
+body.dark-mode .news-block .inner-box,
+body.dark-mode .call-to-action .outer-box .icon-box .icon,
+body.dark-mode .client-block:hover a,
+body.dark-mode .about-section-two .skills-column .skills .bar-inner,
+body.dark-mode .why-choose-us-two,
+body.dark-mode .feature-block-four .inner-box .content-box,
+body.dark-mode .service-block-two .inner-box,
+body.dark-mode .contact-form,
+body.dark-mode .contact-section-two,
+body.dark-mode .counter-block .inner-box,
+body.dark-mode .pricing-block .inner-box,
+body.dark-mode .counter-block .inner-box .icon::after,
+body.dark-mode .about-block-two .inner-box:before,
+body.dark-mode .contact-form .select2-container--default .select2-selection--single,
+body.dark-mode .contact-form input:not([type=submit]),
+body.dark-mode .contact-form textarea,
+body.dark-mode .contact-form select,
+body.dark-mode .feature-block-nine .inner-box,
+body.dark-mode .pricing-section.home4-style,
+body.dark-mode .feature-block-eight .inner-box .icon,
+body.dark-mode .testimonial-block-three .inner-box,
+body.dark-mode .main-footer.home4-style,
+body.dark-mode .main-footer.home4-style .footer-bottom,
+body.dark-mode .service-block-four .inner-box,
+body.dark-mode .about-section-six .image-column .inner-column .image-box .info-box,
+body.dark-mode .main-footer.home3-style .contact-list-two .icon,
+body.dark-mode .pricing-section,
+body.dark-mode .header-style-six .header-lower .main-box,
+body.dark-mode .pricing-block-two .inner-box .price-box-outer,
+body.dark-mode .tm-pricing-plan-switcher .pricing-switcher-btn .btn-toggle,
+body.dark-mode .testimonial-section,
+body.dark-mode .pie-chart-section,
+body.dark-mode .about-block-two .inner-box .icon-box:after,
+body.dark-mode .feature-block-four .inner-box .caption-box .title {
+  background-color: var(--dark-color2);
+}
+body.dark-mode .projects-section-two .owl-nav .owl-prev:before, body.dark-mode .projects-section-two .owl-nav .owl-next:before {
+  background: -webkit-gradient(linear, left top, right top, from(var(--dark-color2)), to(transparent));
+  background: linear-gradient(to right, var(--dark-color2), transparent);
+}
+body.dark-mode .team-block .image-box::before {
+  border-color: var(--dark-color2);
+}
+body.dark-mode .testimonial-block .content-box:before {
+  border-top-color: var(--dark-color2);
+}
+body.dark-mode .process-block .info-box:before {
+  border-bottom-color: var(--dark-color2);
+}
+body.dark-mode .process-block .inner-box:before,
+body.dark-mode .header-style-six .header-lower .main-box {
+  background: var(--dark-color2);
+}
+body.dark-mode .process-block-two .inner-box {
+  padding: 30px 30px 0;
+}
+body.dark-mode .border-color-dark2 {
+  border-left-color: var(--dark-color2);
+}
+body.dark-mode .bg-dark-3 {
+  background-color: var(--dark-color3);
+}
+body.dark-mode .border-color-dark3 {
+  border-bottom-color: var(--dark-color3);
+}
+body.dark-mode .bg-dark-4,
+body.dark-mode .about-block .inner-box .icon:after,
+body.dark-mode .features-section,
+body.dark-mode .pricing-section,
+body.dark-mode .team-block .image-box .image::before,
+body.dark-mode .map-section .outer-box,
+body.dark-mode .feature-block-two .inner-box .caption-box .title,
+body.dark-mode .pricing-block-two .inner-box,
+body.dark-mode .testimonials-section-two,
+body.dark-mode .why-choose-us-four .faq-column .accordion-box .block .acc-btn.active,
+body.dark-mode .project-block-two .inner-box .title,
+body.dark-mode .why-choose-us-three .contact-form input:not([type=submit]),
+body.dark-mode .why-choose-us-three .contact-form textarea,
+body.dark-mode .pricing-section-three,
+body.dark-mode .pricing-section-three,
+body.dark-mode .contact-section-four,
+body.dark-mode .services-section-four,
+body.dark-mode .social-icon-three li a,
+body.dark-mode .about-section-five .image-column .inner-column .image-box .info-box,
+body.dark-mode .pricing-block-two .inner-box,
+body.dark-mode .pricing-block-two .inner-box .price-box-outer,
+body.dark-mode .team-block .image-box .image::before {
+  background-color: var(--dark-color4);
+}
+body.dark-mode .about-section-two .image-column .inner-column .image-box .image-2 img,
+body.dark-mode .pricing-block-two .inner-box {
+  border-color: var(--dark-color4);
+}
+body.dark-mode .border-color-dark4 {
+  border-bottom-color: var(--dark-color4);
+}
+body.dark-mode .testimonial-section .bg:before {
+  background: -webkit-gradient(linear, left top, right top, from(#242424), color-stop(#141414), color-stop(#1a1a1a), to(transparent));
+  background: linear-gradient(to right, #242424, #141414, #1a1a1a, transparent);
+}
+body.dark-mode .main-menu .navigation > li > a,
+body.dark-mode .main-menu .navigation > li.current > a,
+body.dark-mode strong,
+body.dark-mode .title a,
+body.dark-mode h2,
+body.dark-mode h6,
+body.dark-mode .sec-title h2,
+body.dark-mode .sec-title .sub-title,
+body.dark-mode .team-block .inner-box .info-box .name,
+body.dark-mode .testimonial-block .inner-box .content-box .text,
+body.dark-mode .testimonial-block .inner-box .content-box .name,
+body.dark-mode .clients-section .clients-carousel .owl-nav .owl-prev,
+body.dark-mode .clients-section .clients-carousel .owl-nav .owl-next,
+body.dark-mode .about-block .inner-box .title,
+body.dark-mode .about-block-two .inner-box .title,
+body.dark-mode .about-section-three .image-column .inner-column .image-box .info-box .inner .count,
+body.dark-mode .about-section-three .image-column .inner-column .image-box .info-box .inner .icon,
+body.dark-mode .skills .skill-item .skill-header .skill-title,
+body.dark-mode .accordion-box .block .acc-btn,
+body.dark-mode .testimonial-block-two .inner-box .author-box .author-info .name,
+body.dark-mode .process-block .inner-box .title,
+body.dark-mode .contact-form .title,
+body.dark-mode .contact-section-two .content-column .inner-column .features-list li,
+body.dark-mode .counter-block .inner-box .count-box,
+body.dark-mode .counter-block .inner-box .count-text,
+body.dark-mode .feature-block-three .title,
+body.dark-mode .header-search .form-group .icon,
+body.dark-mode .why-choose-us-four .content-column .icon-box .title,
+body.dark-mode .feature-block-nine .inner-box .icon,
+body.dark-mode .feature-block-nine .inner-box .read-more-btn,
+body.dark-mode .feature-block-nine .inner-box .title,
+body.dark-mode .feature-block-nine .inner-box:hover .read-more-btn,
+body.dark-mode .testimonial-block-three .author-box .author-info .name,
+body.dark-mode .main-footer.home4-style .widget-title,
+body.dark-mode .main-header .ui-btn,
+body.dark-mode .main-header .info-btn.ui-info-btn,
+body.dark-mode .about-block-three .inner-box .title,
+body.dark-mode .feature-block .inner-box .title,
+body.dark-mode .pricing-block .inner-box .title,
+body.dark-mode .contact-info-block .icon,
+body.dark-mode .testimonial-block .author-box .author-info .name,
+body.dark-mode .pricing-block .inner-box .price-box .validaty,
+body.dark-mode .pricing-section .content-column .info-box .title,
+body.dark-mode .about-section-six .image-column .inner-column .image-box .info-box .inner .count,
+body.dark-mode .about-section-six .image-column .inner-column .image-box .info-box .inner .icon,
+body.dark-mode .about-section-three .image-column .inner-column .image-box .info-box .inner .text,
+body.dark-mode .why-choose-us-three .contact-form h3,
+body.dark-mode .pie-graph .title,
+body.dark-mode .accordion-box .block .acc-btn .icon,
+body.dark-mode .feature-block-six .inner-box .caption-box .title,
+body.dark-mode .feature-block-six .inner-box .read-more-btn,
+body.dark-mode .about-section-four .about-block-img .title,
+body.dark-mode .pricing-block-three .inner-box .title,
+body.dark-mode .about-section-five .image-column .inner-column .image-box .info-box .inner .count,
+body.dark-mode .pricing-block-two .inner-box .title,
+body.dark-mode .pricing-block-two .inner-box .price-box .price,
+body.dark-mode .tm-pricing-smart-switcher-button .switch-buttons li a,
+body.dark-mode .feature-block-two .inner-box .caption-box .title,
+body.dark-mode .project-block-two .inner-box .title,
+body.dark-mode .testimonial-section .owl-nav .owl-prev,
+body.dark-mode .testimonial-section .owl-nav .owl-next {
+  color: var(--theme-color-light) !important;
+}
+body.dark-mode .CircularProgressbar .CircularProgressbar-text {
+  fill: var(--theme-color-light) !important;
+}
+body.dark-mode .img-light,
+body.dark-mode .client-block img,
+body.dark-mode .icon-text,
+body.dark-mode .about-section-five .about-block-img img,
+body.dark-mode .about-section-four .about-block-img img {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+body.dark-mode .text-lights,
+body.dark-mode p,
+body.dark-mode .text,
+body.dark-mode .list-style-one li,
+body.dark-mode .list-style-one li a,
+body.dark-mode .list-style-one li i,
+body.dark-mode .header-top .useful-links li a,
+body.dark-mode .list-style-two li,
+body.dark-mode .news-block .post-info li i,
+body.dark-mode .testimonial-block .inner-box .content-box .designation,
+body.dark-mode .social-icon-one li a,
+body.dark-mode .pricing-block .inner-box .features-list li,
+body.dark-mode .why-choose-us-four .content-column .image-box .title,
+body.dark-mode .contact-info-block-four .text,
+body.dark-mode .testimonial-section .content-column .text,
+body.dark-mode .about-section-three .content-column .inner-column .list-style-two li,
+body.dark-mode .about-section-four .content-column .inner-column .list-style-two li,
+body.dark-mode .pricing-block-three .inner-box .features-list li,
+body.dark-mode .pricing-block-three .inner-box .offer,
+body.dark-mode .pricing-block-two .inner-box .offer,
+body.dark-mode .pricing-block-two .inner-box .price-box .validaty,
+body.dark-mode .pricing-block-two .inner-box .features-list li {
+  color: rgba(255, 255, 255, 0.6);
+}
+body.dark-mode .bg-dark-text-light,
+body.dark-mode .accordion-box .block.active-block,
+body.dark-mode .accordion-box .block,
+body.dark-mode .team-block .inner-box .image-box .icon-box .icon,
+body.dark-mode .btn-style-two,
+body.dark-mode .banner-carousel .owl-nav .owl-next,
+body.dark-mode .banner-carousel .owl-nav .owl-prev,
+body.dark-mode .service-block .inner-box .read-more,
+body.dark-mode .about-section-three .image-column .inner-column .image-box .info-box,
+body.dark-mode .video-section .play-btn .icon,
+body.dark-mode .process-block .inner-box .count,
+body.dark-mode .projects-section-two .owl-nav .owl-prev,
+body.dark-mode .projects-section-two .owl-nav .owl-next,
+body.dark-mode .pricing-tab .tab-btns .tab-btn,
+body.dark-mode .project-block-four .inner-box .title,
+body.dark-mode .theme-btn,
+body.dark-mode .main-footer.home4-style .social-icon-two a,
+body.dark-mode .service-block-four .inner-box .icon {
+  background-color: var(--theme-color-dark);
+  color: var(--theme-color-light);
+}
+body.dark-mode .process-block .inner-box .title::before {
+  border-right-color: var(--theme-color-dark);
+}
+body.dark-mode .about-section-two .image-column .inner-column .exp-box .inner:before {
+  border-top-color: var(--theme-color-dark);
+}
+body.dark-mode .border-color,
+body.dark-mode .header-style-one .header-lower .outer-box .info-btn,
+body.dark-mode .news-block .inner-box,
+body.dark-mode .about-section .image-column .inner-column .image-box .image-2 img,
+body.dark-mode .about-section .image-column .inner-column .image-box .info-box .inner,
+body.dark-mode .btn-style-two,
+body.dark-mode .header-style-two .main-box .logo-box:before,
+body.dark-mode .about-section-three .image-column .inner-column .image-box .image-2 img,
+body.dark-mode .counter-block .inner-box:hover,
+body.dark-mode .pricing-block .inner-box,
+body.dark-mode .pricing-block .inner-box .title,
+body.dark-mode .about-section-four .image-column .inner-column .image-box .image-2 img,
+body.dark-mode .about-section-five .image-column .inner-column .image-box .image-2 img,
+body.dark-mode .border-end,
+body.dark-mode .main-footer.home4-style .footer-bottom .inner-container,
+body.dark-mode .service-block-four .inner-box .icon {
+  border-color: #2c2a2a;
+}
+body.dark-mode .border-top {
+  border-top: 1px solid #2c2a2a !important;
+}
+body.dark-mode .process-block-two .inner-box .content-box::before,
+body.dark-mode .tm-pricing-plan-switcher .pricing-switcher-btn .btn-toggle {
+  background-color: #2c2a2a;
+}
+body.dark-mode .op-1,
+body.dark-mode .icon-lines-22,
+body.dark-mode .icon-lines-21,
+body.dark-mode .icon-dots,
+body.dark-mode .icon-lines-9,
+body.dark-mode .bg-pattern,
+body.dark-mode .about-section:before {
+  opacity: 0.1;
+}
+body.dark-mode .op-2 {
+  opacity: 0.2;
+}
+body.dark-mode .client-block.home3-style a {
+  opacity: 1;
+}
+body.dark-mode .bg-unset,
+body.dark-mode .client-block:hover,
+body.dark-mode .testimonial-section:before,
+body.dark-mode .testimonial-section:after,
+body.dark-mode .services-section-three,
+body.dark-mode .services-section-three:before {
+  background-color: unset;
+}
+body.dark-mode .bg-img-unset,
+body.dark-mode .bg-pattern-1,
+body.dark-mode .service-block-four.style2 .inner-box,
+body.dark-mode .about-section,
+body.dark-mode .pricing-section,
+body.dark-mode .testimonials-section-two:before,
+body.dark-mode .why-choose-us-three .contact-form,
+body.dark-mode .pricing-section-three:before,
+body.dark-mode .contact-section-four .bg-pattern-4,
+body.dark-mode .banner-section-four .bg:first-child,
+body.dark-mode .services-section-four .bg.bg-image {
+  background-image: unset !important;
+}
+body.dark-mode .marquee-section.home3-style .text {
+  -webkit-text-stroke-color: rgba(249, 249, 249, 0.3803921569);
+}
+body.dark-mode .img-light,
+body.dark-mode .client-block img,
+body.dark-mode .icon-text,
+body.dark-mode .about-section-five .about-block-img img,
+body.dark-mode .main-footer.home4-style .about-widget .logo img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+body.dark-mode .contact-form .select2-container--default .select2-selection--single,
+body.dark-mode .contact-form input:not([type=submit]),
+body.dark-mode .contact-form textarea,
+body.dark-mode .contact-form select {
+  background-color: var(--dark-color3);
+}
+body.dark-mode .pricing-block-three .inner-box .title {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+body.dark-mode .projects-section-two .outer-box {
+  border-top: none;
+}
+body.dark-mode .about-section-five {
+  padding-top: 120px !important;
+}

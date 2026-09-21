@@ -1,0 +1,17 @@
+body.yellow-mode {
+  --theme-color1: #ffaa17;
+  --theme-color2: #0f0f0f;
+  --theme-color3: #24201f;
+  --text-color-bg-theme-color1: #000;
+  --text-color-bg-theme-color2: #fff;
+  --text-color-bg-theme-color3: #fff;
+  --bg-theme-color1: var(--theme-color1);
+  --bg-theme-color2: var(--theme-color2);
+  --bg-theme-color3: var(--theme-color3);
+  --theme-color1-rgb: 255, 170, 23;
+  --theme-color2-rgb: 15, 15, 15;
+  --theme-color3-rgb: 36, 32, 31;
+  --gradient-1: linear-gradient(to right, rgba(var(--theme-color1-rgb), 1) 0%, rgba(var(--theme-color1-rgb), 0.7) 100%);
+  --gradient-2: linear-gradient(to left, rgba(var(--theme-color1-rgb), 1) 0%, rgba(var(--theme-color1-rgb), 0.7) 100%);
+  --gradient-3: linear-gradient(-135deg, rgba(23, 23, 23, 0) 50%, var(--theme-color1) 100%);
+}

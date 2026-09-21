@@ -1,0 +1,115 @@
+/*** 
+
+====================================================================
+    Process Section
+====================================================================
+
+***/
+
+.process-section {
+  position: relative;
+  padding: 120px 0 92px;
+  .bg {
+    opacity: 0.36;
+  }
+  .sec-title {
+    margin-bottom: 70px;
+  }
+}
+
+.process-block {
+  margin-bottom: 30px;
+  &:first-child {
+    .inner-box {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .inner-box {
+    padding: 60px 10px;
+    position: relative;
+    text-align: center;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 182px;
+      height: 182px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background: linear-gradient(to bottom,rgba(var(--theme-color1-rgb),.1) 0%,#f8f8f8 100%);
+      @include transition(all 300ms ease);
+      content: '';
+    }
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: -85px;
+      width: 146px;
+      height: 15px;
+      margin: 0 auto;
+      background-image: url(../images/icons/icon-arrow-2.png);
+      transform: translateY(-50%);
+      content: '';
+      @include media-breakpoint-down(lg){
+        display: none;
+      }
+    }
+    &:hover {
+      .icon {
+        transform: scaleX(-1);
+      }
+      .count {
+        background-color: var(--theme-color1);
+        color: var(--text-color-bg-theme-color1);
+      }
+    }
+    .icon {
+      position: relative;
+      display: block;
+      color: var(--theme-color1);
+      font-size: 65px;
+      line-height: 1em;
+      padding-top: 45px;
+      margin-bottom: 15px;
+      @include transition(all 300ms ease);
+    }
+    .count {
+      position: absolute;
+      top: -15px;
+      right: 90px;
+      width: 53px;
+      height: 53px;
+      line-height: 51px;
+      font-weight: 700;
+      border-radius: 50%;
+      color: var(--theme-color2);
+      border: 2px solid var(--theme-color1);
+      background-color: var(--theme-color-light);
+      text-align: center;
+      @include transition(all 300ms ease);
+      @include media-breakpoint-down(xl){
+        top: 0;
+        right: 70px;
+      }
+      @include media-breakpoint-down(lg){
+        right: 80px;
+      }
+      @include media-breakpoint-down(md){
+        right: 35%;
+      }
+      @include media-breakpoint-down(sm){
+        right: 20%;
+      }
+    }
+    .title {
+      position: relative;
+      color: var(--theme-color2);
+      font-weight: 800;
+      line-height: 30px;
+      margin-bottom: 0;
+    }
+  }
+}

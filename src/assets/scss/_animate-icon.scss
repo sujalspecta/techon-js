@@ -1,0 +1,408 @@
+
+/*** 
+
+====================================================================
+  Anim Icons
+====================================================================
+
+***/
+
+.reveal {
+    position: relative;
+    display: inline-flex;
+    visibility: hidden;
+    overflow: hidden;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform-origin: left;
+    }   
+}
+
+.anim-icons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+[text-split] {
+    opacity: 0;
+}
+
+.word {
+    overflow: hidden;
+    margin-bottom: -0.1em;
+    transform-origin: bottom;
+}
+
+.anim-icons.full-width {
+    max-width: 100%;
+}
+
+.anim-icons .icon {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.icon-lines {
+    width: 467px;
+    height: 440px;
+    background-image: url(../images/icons/icon-lines.png);
+}
+
+.icon-lines-1 {
+    width: 390px;
+    height: 866px;
+    background-image: url(../images/icons/icon-lines-1.png);
+}
+
+.icon-lines-3 {
+    width: 168px;
+    height: 200px;
+    background-image: url(../images/icons/icon-lines-3.png);
+}
+
+.icon-lines-4 {
+    width: 560px;
+    height: 649px;
+    background-image: url(../images/icons/icon-lines-4.png);
+}
+
+.icon-lines-5 {
+    width: 138px;
+    height: 139px;
+    background-image: url(../images/icons/icon-lines-5.png);
+}
+
+.icon-lines-6 {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/icons/icon-lines-6.png);
+}
+
+.icon-lines-7 {
+    width: 258px;
+    height: 266px;
+    background-image: url(../images/icons/icon-lines-7.png);
+}
+
+.icon-lines-8 {
+    width: 647px;
+    height: 541px;
+    background-image: url(../images/icons/icon-lines-8.png);
+}
+
+.icon-lines-9 {
+    width: 370px;
+    height: 237px;
+    background-image: url(../images/icons/icon-lines-9.png);
+}
+
+.icon-lines-10 {
+    width: 112px;
+    height: 109px;
+    background-image: url(../images/icons/icon-lines-10.png);
+}
+
+.icon-lines-13 {
+    width: 388px;
+    height: 403px;
+    background-image: url(../images/icons/icon-lines-13.png);
+}
+
+.icon-lines-14 {
+    width: 222px;
+    height: 231px;
+    background-image: url(../images/icons/icon-lines-14.png);
+}
+
+.icon-lines-15 {
+    width: 710px;
+    height: 1173px;
+    background-image: url(../images/icons/icon-lines-15.png);
+}
+
+.icon-lines-17 {
+    width: 100%;
+    height: 554px;
+    background-image: url(../images/icons/icon-lines-17.png);
+}
+
+.icon-lines-18 {
+    width: 449px;
+    height: 540px;
+    background-image: url(../images/icons/icon-lines-18.png);
+}
+
+.icon-lines-19 {
+    width: 165px;
+    height: 145px;
+    background-image: url(../images/icons/icon-lines-19.png);
+}
+
+.icon-lines-21 {
+    width: 389px;
+    height: 317px;
+    background-image: url(../images/icons/icon-lines-21.png);
+}
+
+.icon-lines-22 {
+    width: 389px;
+    height: 467px;
+    background-image: url(../images/icons/icon-lines-22.png);
+}
+
+.icon-lines-23 {
+    width: 1113px;
+    height: 1584px;
+    background-image: url(../images/icons/icon-lines-23.png);
+}
+
+.icon-lines-25 {
+    height: 405px;
+    width: 390px;
+    background-image: url(../images/icons/icon-lines-25.png);
+}
+
+.icon-circles {
+    width: 758px;
+    height: 518px;
+    background-image: url(../images/icons/icon-circles.png);
+}
+
+.icon-dots {
+    width: 780px;
+    height: 667px;
+    background-image: url(../images/icons/icon-dots.png);
+}
+
+.icon-dots-2 {
+    width: 103px;
+    height: 385px;
+    background-image: url(../images/icons/icon-dots-2.png);
+}
+
+.icon-text {
+    width: 247px;
+    height: 83px;
+    background-image: url(../images/icons/icon-text.png);
+}
+
+.icon-text-2 {
+    width: 175px;
+    height: 175px;
+    background-image: url(../images/icons/icon-text-2.png);
+}
+
+.icon-shape {
+    width: 165px;
+    height: 165px;
+    background-image: url(../images/icons/icon-shape.png);
+}
+
+.icon-shape-3 {
+    width: 221px;
+    height: 80px;
+    background-image: url(../images/icons/icon-shape-3.png);
+}
+
+.icon-shape-5 {
+    width: 100%;
+    height: 669px;
+    background-image: url(../images/icons/icon-shape-5.png);
+}
+
+.icon-arrow {
+    width: 54px;
+    height: 49px;
+    background-image: url(../images/icons/icon-arrow.png);
+}
+
+.icon-comment {
+    width: 73px;
+    height: 67px;
+    background-image: url(../images/icons/icon-comment.png);
+}
+
+.icon-wave {
+    width: 855px;
+    height: 339px;
+    background-image: url(../images/icons/icon-wave.png);
+}
+
+.overlay-1 {
+    width: 932px;
+    height: 739px;
+    background-image: url(../images/icons/overlay-1.png);
+}
+.bg-pattern-1{
+    background-image: url(../images/icons/bg-pattern1.png);
+}
+.bg-pattern-2{
+    background-image: url(../images/icons/bg-pattern2.png);
+}
+.bg-pattern-3{
+    background-image: url(../images/icons/bg-pattern3.png);
+}
+.bg-pattern-4{
+    background-image: url(../images/icons/bg-pattern4.jpg);
+}
+
+.bounce-y{
+    animation: bounce-y 10s infinite linear;
+}
+
+.bounce-x{
+    animation: bounce-x 10s infinite linear;
+}
+
+.zoom-one{
+    animation: zoom-one 10s infinite linear;
+}
+
+.zoom-two{
+    animation: zoom-two 5s infinite linear;
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-y {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-x {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoom-one {
+    0% {
+        transform: scale(.95);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(.95);
+    }
+}
+
+@keyframes zoom-two {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.overlay-anim {
+    position: relative;
+    &:after {
+        background: rgba(255, 255, 255, 0.3);
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0;
+        opacity: 1;
+        z-index: 9;
+        pointer-events: none;
+    }
+    &:hover{
+        &:after {
+            height: 100%;
+            opacity: 0;
+            transition: all 400ms linear;
+        }
+    }   
+}
+
+
+// Animated Moving Circles
+
+.circle {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    left: -10px;
+    top: -10px;
+    border-radius: 100%;
+    z-index: 1;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+    @supports (mix-blend-mode: difference) {
+        background-color: white;
+        mix-blend-mode: difference;
+    }
+    @include for-md{
+        display: none !important;
+    }
+}
+
+.circle-follow {
+    position: fixed;
+    mix-blend-mode: difference;
+    width: 30px;
+    height: 30px;
+    left: -21px;
+    top: -21px;
+    border-radius: 100%;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+    @supports (mix-blend-mode: difference) {
+        border: 1px solid #fff;
+        mix-blend-mode: difference;
+    }
+    @include for-md {
+        display: none !important;
+    }
+}

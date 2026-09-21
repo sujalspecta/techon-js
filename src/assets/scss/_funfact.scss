@@ -1,0 +1,155 @@
+/*** 
+====================================================================
+  Funfacts Section
+====================================================================
+***/
+
+.funfact-section {
+  padding: 120px 0 90px;
+  position: relative;
+  .bg {
+    &:before {
+      background-color: var(--theme-color2);
+      content: '';
+      @include overlay;
+      opacity: .95;
+    }
+  }
+  .icon-lines-4 {
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  .sec-title {
+    margin-bottom: 30px;
+  }
+}
+
+.counter-block {
+  margin-bottom: 30px;
+  .inner-box {
+    background-color: var(--theme-color-white);
+    border: 10px solid var(--theme-color1);
+    margin-top: 60px;
+    padding: 80px 30px 33px;
+    position: relative;
+    text-align: center;
+    @include transition(all 300ms ease);
+    &:before {
+      background: var(--theme-color1);
+      bottom: 0;
+      content:'';
+      left: 0;
+      opacity: 0;
+      position:absolute;
+      right: 0;
+      top: 0;
+      transform: scale(.4);
+      transition:all 300ms ease;
+    }
+    &:hover {
+      border-color: var(--theme-color-white);
+      &:before {
+        opacity: 1;
+        transform: scale(1);
+      }
+      .icon {
+        color: var(--theme-color1);
+        &:after{
+          transform: scale(1);
+        }
+      }
+      .count-box,
+      .count-text,
+      .counter-title {
+        color: var(--text-color-bg-theme-color1);
+      }
+    }
+    .icon-lines-5 {
+      @include absolute-bottom-right;
+    }
+    .icon{
+      background: var(--gradient-2);
+      border-radius: 50%;
+      color: var(--text-color-bg-theme-color1);
+      @include flex-center;
+      font-size: 60px;
+      height: 116px;
+      left: 50%;
+      position: absolute;
+      top: -70px;
+      width: 116px;
+      transform: translateX(-50%);
+      @include transition(all 300ms ease);
+      z-index: 2;
+      &:before {
+        position: relative;
+        z-index: 3;
+      }
+      &::after{
+        @include overlay;
+        background-color: var(--theme-color-white);
+        border-radius: 50%;
+        transform: scale(0);
+        @include transition(all 300ms ease);
+        content: "";
+      }
+    }
+
+    .count-box {
+      color: var(--theme-color2);
+      font-size: 50px;
+      font-weight: 800;
+      letter-spacing: -.04em;
+      line-height: 1em;
+      margin-bottom: 23px;
+      position: relative;
+      @include transition(all 300ms ease);
+    }
+    .count-text {
+      color: var(--theme-color2);
+      font-size: 50px;
+      font-weight: 800;
+      line-height: 1em;
+      letter-spacing: -.04em;
+      margin-bottom: 0;
+      position: relative;
+      @include transition(all 300ms ease);
+    }
+    .counter-title {
+      color: var(--theme-color2);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1em;
+      margin-bottom: 10px;
+      position: relative;
+      @include transition(all 300ms ease);
+    }
+  }
+}
+
+/*** 
+====================================================================
+  Funfacts Section Two
+====================================================================
+***/
+
+.funfact-section-two {
+  padding: 120px 0 90px;
+  position: relative;
+  .bg {
+    &:before {
+      background-image: url("../images/banner/shape-lines-1.png");
+      background-color: #222429;
+      background-position: center left;
+      background-repeat: no-repeat;
+      content: '';
+      @include overlay;
+      opacity: .95;
+    }
+  }
+  .sec-title {
+    margin-bottom: 30px;
+  }
+}

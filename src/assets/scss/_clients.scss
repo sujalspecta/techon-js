@@ -1,0 +1,76 @@
+/*** 
+====================================================================
+  Clients Section
+====================================================================
+***/
+
+.clients-section{
+  position: relative;
+  padding: 120px 0 90px;
+  z-index: 1;
+  .clients-carousel {
+    z-index: 10;
+    .owl-nav{
+      display: none;
+    }
+  }
+  .outer-box {
+    position: relative;
+    &:before {
+      background-color: #dfdfdf;
+      content: '';
+      height: 1px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+    }
+  }
+  .sponsors-outer{
+    padding: 61px 0px 0;
+  }
+}
+
+.client-block{
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  padding: 20px 10px;
+  &:hover {
+    background-color: #f9f6ff;
+    a {
+      opacity: 1;
+      img {
+        filter: grayscale(0);
+      }
+    }
+  }
+  a {
+    display: inline-block;
+    opacity: .4;
+    position: relative;
+    text-align: center;
+    @include transition(all 300ms ease);
+  }
+  img {
+    display: inline-block;
+    width: auto;
+    max-width: 180px;
+    filter: grayscale(100%);
+  }
+  &.home3-style{
+    a{
+      padding: 20px 10px;
+      img{
+        filter: grayscale(100%);
+        @include transition(all 300ms ease);
+      }
+      &:hover{
+        img{
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
+}
