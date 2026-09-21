@@ -99,7 +99,7 @@ function ServiceDetails({ className }) {
                                 <ul className="accordion-box wow fadeInRight">
                                     <li onClick={() => openQuestion(1)} className={`accordion block ${showQues === 1 ? 'active-block' : ''}`}>
                                         <div className={`acc-btn ${showQues === 1 ? 'active' : ''}`}>
-                                            <span class="count">1.</span>Is my technology allowed on tech?
+                                            <span className="count">1.</span>Is my technology allowed on tech?
                                             <div className="icon fa fa-plus" />
                                         </div>
                                         <div className={`acc-content ${showQues === 1 ? 'current' : ''}`}>
@@ -110,7 +110,7 @@ function ServiceDetails({ className }) {
                                     </li>
                                     <li onClick={() => openQuestion(2)} className={`accordion block ${showQues === 2 ? 'active-block' : ''}`}>
                                         <div className={`acc-btn ${showQues === 2 ? 'active' : ''}`}>
-                                            <span class="count">2.</span> How to soft launch your business?
+                                            <span className="count">2.</span> How to soft launch your business?
                                             <div className="icon fa fa-plus" />
                                         </div>
                                         <div className={`acc-content ${showQues === 2 ? 'current' : ''}`}>
@@ -121,7 +121,7 @@ function ServiceDetails({ className }) {
                                     </li>
                                     <li onClick={() => openQuestion(3)} className={`accordion block ${showQues === 3 ? 'active-block' : ''}`}>
                                         <div className={`acc-btn ${showQues === 3 ? 'active' : ''}`}>
-                                            <span class="count">3.</span> How to turn visitors into contributors
+                                            <span className="count">3.</span> How to turn visitors into contributors
                                             <div className="icon fa fa-plus" />
                                         </div>
                                         <div className={`acc-content ${showQues === 3 ? 'current' : ''}`}>
@@ -132,7 +132,7 @@ function ServiceDetails({ className }) {
                                     </li>
                                     <li onClick={() => openQuestion(4)} className={`accordion block ${showQues === 4 ? 'active-block' : ''}`}>
                                         <div className={`acc-btn ${showQues === 4 ? 'active' : ''}`}>
-                                            <span class="count">4.</span> How can i find my solutions?
+                                            <span className="count">4.</span> How can i find my solutions?
                                             <div className="icon fa fa-plus" />
                                         </div>
                                         <div className={`acc-content ${showQues === 4 ? 'current' : ''}`}>
